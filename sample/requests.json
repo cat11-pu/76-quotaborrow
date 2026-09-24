@@ -1,0 +1,14 @@
+{
+  "pool": 100,
+  "base": 40,
+  "pool_invariant": true,
+  "ops": [
+    {"op": "request", "tenant": "a", "amount": 40},
+    {"op": "request", "tenant": "b", "amount": 30},
+    {"op": "request", "tenant": "a", "amount": 20},
+    {"op": "request", "tenant": "b", "amount": 30},
+    {"op": "request", "tenant": "c", "amount": 50},
+    {"op": "reclaim", "tenant": "a"},
+    {"op": "request", "tenant": "a", "amount": 10}
+  ]
+}
